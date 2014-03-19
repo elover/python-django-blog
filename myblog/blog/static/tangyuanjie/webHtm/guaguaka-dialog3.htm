@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>元宵节有礼</title>
+    <link rel="stylesheet" href="../static/css/normalize.css" />
+    <link rel="stylesheet" href="../static/css/base.css" />
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <p class="title">恭喜！这碗汤圆里包含20M流量</p>
+        </header>
+        <div id="content">
+            <form id="form" action="" method="post">
+                <p class="tip">
+                    请在下面输入电信手机号，我们将在活动结束
+                    后为该手机号充值获赠流量
+                </p>
+                <input type="hidden" id="accountId" name="" />
+                <input type="text" id="phone-number" placeholder="请输入以133、153、180、181、189开头的手机号">
+                <input id="submit" type="submit">
+                <p class="error-tip">
+
+                </p>
+            </form>
+        </div>
+        <div id="tangyuan-big">
+            <img src="../static/images/tangtuan-big.png" alt="">
+
+        </div>
+        <footer>
+            <div class="huawen">
+            </div>
+        </footer>
+    </div>
+    <div id="backdrop"></div>
+    <div class="dialog-wrapper">
+        <div class="dialog">
+            <div class="dialog-header"></div>
+            <div class="dialog-content">
+                <img src="../static/images/error-img.png" alt="失败了" class="dialog-tip">
+                <div class="dialog-message">
+                    <p>校园云用户签到5次
+                        <br>才能参加活动哦~</p>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button type="button" class="ok">确定</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../static/js/lib/zepto.min.js"></script>
+    <script type="text/javascript" src="../static/js/core.js"></script>
+</body>
+
+</html>

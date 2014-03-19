@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>发布文章</title>
+    <link rel="stylesheet" href="http://lab.lepture.com/editor/editor.css"/>
+    <script type="text/javascript" src="http://lab.lepture.com/editor/marked.js"></script>
+    <script type="text/javascript" src="http://lab.lepture.com/editor/editor.js"></script>
+</head>
+<body>
+    <h1>发布文章</h1>
+
+    {% if form.errors %}
+        <p style="color: red;">
+            Please correct the error{{ form.errors|pluralize }} below.
+        </p>
+    {% endif %}
+    <form action="" method="post">{% csrf_token %}
+        <div class= "fn-form-item">
+            {{ form.h1.errors }}
+            <label for ="id_h1">标题</label>
+            {{ form.h1 }}
+        </div>
+        <div class="fn-form-item">
+            {{ form.content.errors }}
+            <label for="id_content">内容</label>
+            {{ form.content }}
+        </div>
+        <div class="fn-form-item">
+            {{ form.music_url.errors }}
+            <label for="id_music_url">音乐</label>
+            {{ form.music_url }}
+        </div>
+
+        <div class="fn-form-item">
+            {{ form.author.errors }}
+            <label for="id_author">作者</label>
+            {{ form.author }}
+        </div>
+        <div class="fn-form-item">
+            {{ form.category.errors }}
+            <label for="id_category">分类</label>
+            {{ form.category }}
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <script type="text/javascript">
+        var editor = new Editor();
+        editor.render();
+    </script>
+</body>
+</html>

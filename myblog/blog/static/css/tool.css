@@ -1,0 +1,22 @@
+
+    /*全局样式*/
+    a {
+        text-decoration: none;
+    }
+    /*清除浮动*/
+    .clearfix {
+        *zoom: 1;
+    }
+    .clearfix:before, .clearfix:after {
+        display: table;
+        line-height: 0;
+        content:"";
+    }
+    .clearfix:after {
+        clear: both;
+    }
+    .fn-center {
+        text-align: center;
+    }
+
+    /*全局样式end*/
